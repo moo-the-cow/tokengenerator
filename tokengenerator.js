@@ -11,5 +11,5 @@ if (document.location.hash) {
 	}
 }
 $("#gettoken").on("click", function(event){
-	window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(env.data.redirect)}&response_type=token&scope=${scopes}`;
+	window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(redirect)}&response_type=token&scope=${scopes}`;
 });
