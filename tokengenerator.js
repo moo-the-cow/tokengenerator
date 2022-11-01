@@ -26,7 +26,7 @@ if (document.location.hash) {
 	}
 }
 if (typeof getUrlParameter("code") !== "undefined") {
-	code = getUrlParameter("code");
+	var code = getUrlParameter("code");
 	$("#code").val(code);
 }
 
