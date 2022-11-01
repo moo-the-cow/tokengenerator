@@ -9,6 +9,10 @@ if (document.location.hash) {
 		access_token = parsedHash.get("access_token");
 		$("#oauth").val(access_token);
 	}
+	if (parsedHash.get("code")) {
+		code = parsedHash.get("code");
+		$("#code").val(code);
+	}
 }
 $("#gettoken").on("click", function(event){
 	window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(redirect)}&response_type=token&scope=${scopes}`;
