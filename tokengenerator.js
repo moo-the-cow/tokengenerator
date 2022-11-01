@@ -25,7 +25,7 @@ if (document.location.hash) {
 		$("#oauth").val(access_token);
 	}
 }
-if (typeof getUrlParameter("code") !== "undefined")
+if (typeof getUrlParameter("code") !== "undefined") {
 	code = getUrlParameter("code");
 	$("#code").val(code);
 }
